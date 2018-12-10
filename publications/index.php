@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>[ Zeinalipour | All Publications ]</title>
+<title>[ Dantu | All Publications ]</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Font Awesome Icons -->
@@ -174,14 +174,14 @@
 <?php
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
-    
+
     /*
-     Available Fields: 
-     
-     The field TYPE will be used for data-filtering. If it is not available then the item will be 
+     Available Fields:
+
+     The field TYPE will be used for data-filtering. If it is not available then the item will be
      marked as uncategorised.
-     
-     'note' 
+
+     'note'
      'abstract'
      'year'
      'group'
@@ -211,22 +211,22 @@
      'powerpoint',
      'infosite',
      'website'
-     
+
      */
-    
-    /* 
+
+    /*
      Define the format that will be used for printing each bibtex item.
      If a you desire to print a string infront of a field please use the following format:
-     
+
      article = array("title", "author", "string", "bibtex field");
-     
+
      eg.
-     
+
      article = array("title", "author", "Num. Of pages", "pages");
-     
-     Please modify the example below as desired  is presented bellow. 
+
+     Please modify the example below as desired  is presented bellow.
      */
-    
+
     $article = array("title", "author", "journal", "series", "location", "publisher", "volume", "number", "pages", "address", "isbn", "year");
     $book = array("title", "author", "booktitle", "series", "location", "publisher", "volume", "pages", "address", "isbn", "year");
     $booklet = array("title", "author", "booktitle", "series", "location", "publisher", "volume", "pages", "address", "isbn", "year");
@@ -242,32 +242,32 @@
     $techreport = array("title", "author", "booktitle", "series", "location", "publisher", "volume", "pages", "address", "isbn", "year");
     $unpublished = array("title", "author", "booktitle", "series", "location", "publisher", "volume", "pages", "address", "isbn", "year");
     $other = array("title", "author", "booktitle", "series", "location", "publisher", "volume", "pages", "address", "isbn", "year");
-    
-    /* 
+
+    /*
      Delimiter for Seperating each bibtex field
      */
-    
+
     $delimiter = '.';
-    
+
     /*
-     
+
      Enter fields equivalent to type field in the BibTex file to sort the bibtex entries in categories. Bellow each type enter the title which will be presented as the category title.
-     
+
      */
-    
+
     $sortby = array('journal', 'conference', 'book', 'editorial', 'theses', 'gconferences');
     $sortbyTitle = array('Journals and Magazines', 'Conference Proceedings', 'Book Chapters', 'Editorials','Theses', 'Greek Conferences');
-   
+
     $projects = array('all');
-    include 'bibtex.php';				
-   
-   /* 
+    include 'bibtex.php';
+
+   /*
      Enter the location of your BibTex file
     */
     $bibTexFile = 'demo.bib';
-    
+
     $bibTex = new BibTeX_Parser();
-    $bibTex->parser($file = $bibTexFile); 
+    $bibTex->parser($file = $bibTexFile);
     ?>
 </body>
 </html>
