@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>[ Karthik Dantu @ UB ]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/menucollapse.js"></script>
+<script type="text/javascript" src="js/arrow78.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28270537-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<body id="page-top" class="index">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <button id="button2" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span><a href="http://www.buffalo.edu/"><img border="0" width="250" src="images/ublogo.png"/></a></span>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Home<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-1-content').show();" href="#intro">Introduction</a></li>
+                        <li><a href="bio.html">Short Biography</a></li>
+                        <!-- <li><a href="cv.html">CV (Web)</a></li> -->
+                        <li><a target="_blank" href="kar-cv.pdf">CV (PDF)</a></li>
+                    </ul>
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="#news">News</a>
+                </li>
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Publications<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                    <li><a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="#publications">Selected</a></li>
+                        <!-- <li><a href="publications/">All</a></li> -->
+                    </ul>
+                </li>
+                <!-- <li class="page-scroll">
+                    <a href="talks/">Talks</a> -->
+                </li>
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Courses</a>
+                </li>
+                <!-- <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#awards">Awards</a>
+                </li> -->
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-6-content').show();" href="#service">Service</a>
+                </li>
+                <li class="page-scroll">
+                <a onclick="javascript:reset_menus();$('#tab-7-content').show();" href="#advising">Advising</a>
+                </li>
+                <li class="page-scroll">
+                  <a onclick="javascript:reset_menus();$('#tab-8-content').show();" href="#grants">Grants</a>
+                    <!-- <a target="_blank" href="http://dmsl.cs.ucy.ac.cy/projects.php">Grants</a> -->
+                </li>
+
+                <!-- <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#contact">Contact</a>
+                </li> -->
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#bs-example-navbar-collapse-2').toggle();">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+
+        <!-- search box submenu -->
+        <div class="collapse" id="bs-example-navbar-collapse-2">
+            <gcse:search></gcse:search>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+<section>
+    <!-- Place this tag where you want the search results to render -->
+    <gcse:searchresults-only></gcse:searchresults-only>
+</section>
+
+<!-- Home Section -->
+<section id="home" style="margin-top:40px">
+<div class="container">
+        <div align="left" class="col-md-3">
+            <a target="_blank" href="images/kar.jpg">
+                <img id="mobile-img" src="images/kar.jpg" width="250" border="0" alt=""></a>
+        </div>
+        <div align="left" class="col-md-4">
+            <h3>Karthik Dantu
+                <h5>Ph.D. University of Southern California</h5></h3>
+
+            <h4>Assistant Professor<br>
+            <a href="https://engineering.buffalo.edu/computer-science-engineering.html">Computer Science and Engineering</a><br>
+            <a href="http://www.buffalo.edu/">University at Buffalo</a><br>
+            338 Davis Hall<br>
+            Buffalo NY 14222<br>
+            Tel/Fax: <a href="tel:0017166452670">(716) 645-2670</a><br/>
+            Fax: <a href="tel:0017166453484"> (716) 645-3484</a><br/>
+            Email:
+            <script language="JavaScript">
+                <!--
+                document.write("&nbsp;");
+                spiderjam('kdantu','buffalo.edu');
+                -->
+            </script><br/>
+            <!-- Directions: <a target="_blank" href="https://tinyurl.com/ubcse">https://tinyurl.com/ubcse</a> -->
+            </h4>
+        </div>
+
+
+<!--        <i class="twittertop" style="display:none;" id="t1">
+        <div id="news" tyle="text-align: left"  class="col-md-5">&nbsp;
+            <!-- <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                by @dmslcy</a>
+            <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");</script></center>
+        </div>
+        </i>
+-->
+        <!--<p><a href="#" class="btn btn-primary">More &raquo;</a></p>-->
+        <i class="expandshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="width: 100%;" onclick="javascript:$('.allshow').show();$('.noshow').hide();$('.collapseshow').show();$('.expandshow').hide();">EXPAND ALL SECTIONS <span class="glyphicon glyphicon-chevron-down"></span></button>
+        </i>
+        <i class="collapseshow" style="display:none;" id="tab-1">
+            <button class="btn btn-primary btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('.allshow').hide();$('.noshow').show();$('.expandshow').show();$('.collapseshow').hide();">COLLAPSE ALL SECTIONS <span class="glyphicon glyphicon-chevron-up"></span></button>
+        </i>
+
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="intro">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+            <!--<h2>Welcome!</h2>-->
+
+            <i class="noshow" style="display:none;" id="tab-1">
+            <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-1-content').toggle();">Introduction <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-1-content">
+            <hr class="star-primary">
+
+            <p class="lead">I am an Assistant Professor in Computer Science and Engineering at University at Buffalo, State University of New York. Prior to that, I was a Postdoctoral Fellow in EECS at Harvard from 2010-13. I received my M.S. and Ph.D. in Computer Science from University of Southern California in 2010. <br>
+            </p>
+            <p>
+              My research interests are in algorithmic and systems challenges in Edge Computing Systems.
+            </p>
+
+            <p><a href="bio.html" class="btn-sm btn-primary">Short Biography &raquo;</a>
+               <!-- <a href="cv.html" class="btn-sm btn-primary">CV (Web)&raquo;</a> -->
+               <a href="kar-cv.pdf" class="btn-sm btn-primary">CV (PDF)&raquo;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="news">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:0px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+              <hr class="star-primary">
+
+              <h2>News </h2> <!-- <a href="publications/" class="btn btn-primary">All Publications&raquo;</a></h2> -->
+              <ul>
+                <li><span class="label label-success"> Grant </span> &nbsp[May 2019] <b>NSF CAREER Award</b> on <em><a href="https://nsf.gov/awardsearch/showAward?AWD_ID=1846320&HistoricalAwards=false">Enabling Seamless Vision Sensing in Cloud-Edge Systems</a></em> is awarded. </li>
+                <li><span class="label label-default"> Paper </span>&nbsp [Apr 2019] Our paper <i><a href="https://arxiv.org/abs/1903.06687">Augmenting Visual SLAM with Wi-Fi Sensing For Indoor
+Applications</a></i> has been <b>conditionally accepted to <a href="https://www.springer.com/engineering/control/journal/10514/"> Springer Autonomous Robots</a></b> journal.
+                <li><span class="label label-default"> Paper </span>&nbsp [Apr 2019] Our paper <i>Decentralized Task Allocation in Lossy Networks: A Simulation Study</i> has been <b>accepted to <a href="https://secon2019.ieee-secon.org/"> IEEE SECON 2019</a></b>.
+                <li><span class="label label-default"> Paper </span>&nbsp [Mar 2019] Our paper <i>OS-based Energy Accounting for Asynchronous Resources in IoT Devices</i> has been <b>accepted to <a href="http://ieee-iotj.org/"> IEEE Internet of Things Journal</a></b>.
+                <li><span class="label label-default"> Paper </span>&nbsp [Feb 2019] The <a href="https://github.com/jmodares/UB-ANC-Emulator">UB-ANC Emulator</a> has been <b>accepted to <a href="https://journals.sagepub.com/home/mav"> International Journal on Micro Air Vehicles</a></b>.
+                <li><span class="label label-default"> Paper </span>&nbsp [Jan 2019] Our work on Multi-agent Visual Map Merging using Wireless Sensing titled <em> Wisdom: Wireless Sensor Driven Distributed
+Online Mapping </em> is <b>accepted to <a href="https://www.icra2019.org/"> ICRA 2019</a></b>.
+            </div>
+        </div>
+      </div>
+</section>
+
+
+<!--
+<div class="twitterlow" style="display:none;" id="t1">
+<!-- News Section
+<section id="news">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-2">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-2-content').toggle();">News  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <i class="allshow" style="display:none;" id="tab-2-content">
+
+            <hr class="star-primary">
+
+            <!--
+            <h2>News</h2>
+            <center><a class="twitter-timeline" href="https://twitter.com/dmslucy" data-chrome="nofooter" data-widget-id="346662554203992065">Tweets
+                by @dmslcy</a>
+            <script>!function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+            </script>
+            </center>
+            </i>
+        </div>
+    </div>
+</section>
+</div>
+-->
+
+<!-- Research Section -->
+<section id="publications">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-3">
+                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Publications  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-3-content">
+            <hr class="star-primary">
+
+            <h2>Selected Publications </h2> <!-- <a href="publications/" class="btn btn-primary">All Publications&raquo;</a></h2> -->
+            <h4>
+            <span class="label label-warning">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/H-index"><font color=white>h-index</font></a>: 17
+            </span>&nbsp;
+            <span class="label label-warning">
+               <a target="_blank" href="https://scholar.google.com/citations?user=aOO2tOwAAAAJ&hl=en"><font color=white>Citations</font></a>: 1779
+            </span>&nbsp;
+            <!-- <span class="label label-warning">
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Erd&ouml;s_number"><font color="white">Erd&ouml;s #</font></a>: 3
+            </span> -->
+            </h4>
+
+            <p><h3> Mobile Systems </h3></p>
+            <ul>
+                <li> Matthew Rantanen, Nicholas Mastronarde, Karthik Dantu, Jeffrey Hudack, "<a href=""> Decentralized Task Allocation in Lossy Networks: A Simulation Study </a>", <i> accepted for publication to 2019 16th Annual IEEE International Conference on Sensing, Communication, and Networking </i> (<b>SECON '19</b>), Boston, MA, 10-13 June 2019. (<u>acceptance: 28.6%</u>)</li>
+                <li> Farshad Ghanei, Pranav Tipnis, Kyle Marcus, Karthik Dantu, Steve Ko, Lukasz Ziarek, "<a href="https://ieeexplore.ieee.org/abstract/document/8674793">OS-based Energy Accounting for Asynchronous Resources in IoT Devices</a>", <i> accepted for publication IEEE Internet of Things Journal</i> (<b>IoTJ</b>), March 2019.
+                <li> Taeyeon Ki, Chang Min Park, Karthik Dantu, Steven Y. Ko, Lukasz Ziarek, <a href="https://2019.icse-conferences.org/event/icse-2019-technical-papers-mimic-ui-compatibility-testing-system-for-android-apps">Mimic: UI Compatibility Testing System for Android Apps</a>, <i> accepted for publication in the 41st ACM/IEEE International Conference on Software Engineering</i> (<b>ICSE '19</b>), Montreal, QC, 25-31 May 2019. (<u>acceptance: 21%</u>)</li>
+                <li> Yin Yan, Girish Gokul, Karthik Dantu, Steve Ko, Jan Vitek, Lukasz Ziarek, <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3289257"> "Can Android Run on Time?
+                   Extending and Measuring the Android Platform’s Timeliness"</a>, <i>accepted for publication in ACM Transactions on Embedded Computing Systems </i> (<b>ACM TECS</b>), Vol. xx, Iss. x, pp. x-x, 2019.</li>
+                <li> Chang Min Park, Taeyeon Ki, Ali Ben Ali, Nikhil Sunil Pawar, Karthik Dantu, Steve Ko, Lukasz Ziarek, <a target="_blank" href="http://beyondthegeek.com/portfolio/gesto-eics-19/"> "Gesto: Mapping UI Events to Gestures and Voice Commands"</a>, <i> accepted for publication at The 11th ACM SIGCHI Symposium on Engineering Interactive Computing Systems </i> (<b>EICS '19</b>'), Valencia, Spain, May 2019.
+                <li> Sharath Chandrashekhara, Taeyeon Ki, Kyungho Jeon, Karthik Dantu, and Steven Y. Ko, <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3117822">"BlueMountain: An Architecture for Customized Data Management on Mobile Systems"</a>, <i>In Proceedings of the 23rd Annual International Conference on Mobile Computing and Networking </i> (<b>MobiCom '17</b>). ACM, New York, NY, USA, 396-408.  (<u> acceptance: 19.8%</u>)</li>
+                <li> Taeyeon Ki, Alexander Simeonov, Bhavika Pravin Jain, Chang Min Park, Keshav Sharma, Karthik Dantu, Steven Y. Ko, and Lukasz Ziarek, <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3081341">"Reptor: Enabling API Virtualization on Android for Platform Openness"</a>, <i> In Proceedings of the 15th Annual International Conference on Mobile Systems, Applications, and Services</i> (<b>MobiSys '17</b>). ACM, New York, NY, USA, 399-412.  (<u> acceptance: 18.1%</u>)</li>
+            </ul>
+            <p><h3> Robotics </h3></p>
+            <ul>
+              <li> Zakieh Hashemifar, Charuvahan Adhivarahan, Anand Balakrishnan, Karthik Dantu, <a href="https://arxiv.org/abs/1903.06687"> "Augmenting Visual SLAM with Wi-Fi Sensing For Indoor Applications" </a>, conditionally accepted to <i> Springer Autonomous Robots Journal </i> (<b>AuRo</b>), 2019. </li>
+              <li> J. Modares, N. Mastronarde and K. Dantu, <a href="https://journals.sagepub.com/doi/full/10.1177/1756829319837668">"Simulating Unmanned Aerial VehicleNetworks with the UB-ANC Emulator"</a> accepted for publication in <i>International Journal of Micro Air Vehicles </i>(<b>IJMAV</b>), 2019. </li>
+                <!-- <li> M. Rantanen, J. Modares, N. Mastronarde, F. Ghanei and K. Dantu, "<a href="https://ieeexplore.ieee.org/document/8448984">Performance of the Asynchronous Consensus Based Bundle Algorithm in Lossy Network Environments,</a>" <i> IEEE 10th Sensor Array and Multichannel Signal Processing Workshop (SAM)</i>, Sheffield, 2018, pp. 311-315. </li> -->
+                <li> Charuvahan Adhivarahan and Karthik Dantu, "Wisdom: Wireless Sensor Driven Distributed
+Online Mapping", accepted to International Conference on Robotics and Automation (<b>ICRA '19</b>), Montreal, Canada, May 2019  (<u> acceptance: 44%</u>).
+                <li>J. Modares, F. Ghanei, N. Mastronarde and K. Dantu, <a target="_blank" href="https://ieeexplore.ieee.org/document/7989732">UB-ANC planner: Energy efficient coverage path planning with multiple drones,"</a> <i> IEEE International Conference on Robotics and Automation </i> (<b>ICRA '17</b>'), Singapore, 2017, pp. 6182-6189.  (<u> acceptance: 41%</u>)</li>
+                <li> Y. Chen, S. B. Fuller and K. Dantu, <a href="https://ieeexplore.ieee.org/document/8206490"> "Quadrobee: Simulating flapping wing aerial vehicle dynamics on a quadrotor,"</a> <i> IEEE/RSJ International Conference on Intelligent Robots and Systems </i>(<b>IROS '17</b>), Vancouver, BC, 2017, pp. 5957-5964.  (<u> acceptance: 45%</u>)</li>
+              <li> J. Modares, N. Mastronarde and K. Dantu, <a href="https://ieeexplore.ieee.org/document/7862404"> UB-ANC emulator: An emulation framework for multi-agent drone networks,"</a> <i>IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots </i>(<b>SIMPAR '16</b>), San Francisco, CA, 2016, pp. 252-258. </li>
+            <!-- <p><a href="publications/" class="btn btn-primary">All Publications &raquo;</a>
+            </p> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-4-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-4-content">
+            <hr class="star-primary">
+            <h2>Courses</h2> <!--<a href="teaching.html"  class="btn btn-primary">More &raquo;</a></h2>-->
+            <ul>
+                <li><span class="label label-success">CSE 468/568</span> <a href="https://catalog.buffalo.edu/courses/index.php?abbr=CSE&num=468"> Robotics Algorithms</a></li>
+                <li><span class="label label-default">CSE 622</span> <a target="_blank" href="https://catalog.buffalo.edu/courses/index.php?abbr=CSE&num=622">Advanced Computer Systems</a></li>
+                <li><span class="label label-success">CSE 421/521</span> <a href="https://catalog.buffalo.edu/courses/index.php?abbr=CSE&num=421"> Introduction to Operating Systems</a></li>
+               <li><span class="label label-default">CSE 610</span> <a target="_blank" href=""> Special Topics in Sensor Systems</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="awards">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-5-content').toggle();">Awards  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-5-content">
+
+            <hr class="star-primary">
+            <h2>Selected Awards <a href="cv.html#SECTION000120000000000000000" class="btn btn-primary">More &raquo;</a></h2>
+            <ul>
+                <li>
+                    <span class="label label-success">EVARILOS'14</span> <a target="_blank" href="http://www.evarilos.eu/open-challenge.php">Best Demo Award</a>, EVARILOS Open Challenge, FP7 Project (#317989), European Union, Berlin, Germany, 2014.</span>
+                </li>
+                <li>
+                    <span class="label label-success">IPSN'14</span> <a target="_blank" href="http://research.microsoft.com/en-us/events/ipsn2014indoorlocalizatinocompetition/">2nd Best Demo Award</a>, Microsoft Indoor Localization Competition 2014, collocated with 13th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN'14), April 15-17, Berlin, Germany, 2014.</span>
+                </li>
+                <li>
+                    <span class="label label-success">APPCAMPUS'13</span> <a target="_blank" href="https://blogs.windows.com/bloggingwindows/2013/11/11/5-top-apps-from-the-appcampus-program-for-windows-phone/">Appcampus Award</a>, ``Rayzit: Crowd Messaging'', Microsoft, Nokia and Aalto University, Finland, 2013.</span>
+                </li>
+
+                <li>
+                    <span class="label label-success">MDM'12</span> <a target="_blank" href="http://mdmconferences.org/mdm2012/">Best Demo Award</a>,  ``The Airplace Indoor Positioning Platform for Android Smartphones'', 13th IEEE International Conference on Mobile Data Management (MDM'12), Bangalore, India, July 23-26, 2012.</span>
+                </li>
+                <li>
+                    <span class="label label-success">COREGRID'06</span> <a target="_blank" href="http://mdmconferences.org/mdm2012/">Best Demo Award</a>, ``ICGrid: Intensive Care Grid'', CoreGRID Industrial Conference, Sophia Antipolis, France, Nov. 2006.</span>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Service Section -->
+<section id="service">
+
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-6">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-6-content').toggle();">Service  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-6-content">
+
+           <hr class="star-primary">
+           <h2>Professional Service</h2><!-- <a href="cv.html#SECTION00070000000000000000" class="btn btn-primary">More &raquo;</a></h2> -->
+
+           <p>
+           <span class="label label-success">Conference Committees</span>
+           <ul>
+             <li> <b> 2019</b>: <a href="https://sigmobile.org/mobicom/2019/committee.php"> Mobicom</a>, <a href="https://iwqos2019.ieee-iwqos.org/"> IWQoS </a>, <a href="https://www.sigmobile.org/mobisys/2019/committee/"> Mobisys Poster Co-Chair </a>, <a href="https://www.icra2019.org/">ICRA (Associate Editor) </a> </li>
+             <li> <b> 2018</b>: <a href="http://sensys.acm.org/2018/people/">Sensys (Full)</a>, <a href="http://www.roboticmaterials.com/dars2018/index.php/committee/"> DARS </a>, <a href="http://www.ccse.uestc.edu.cn/webs/mass2018/"> MASS </a>, <a href="https://www.icra2018.org/">ICRA (Associate Editor)</a>, Co-Chair <a href="https://sites.google.com/view/ioparts2018/home"> First Workshop on Internet of People, Assistive Robots and Things (IoPARTS) </a> </li>
+             <li> <b> 2017</b>: <a href="http://sensys.acm.org/2017/people/"> Sensys</a>, <a href="https://www.icra2017.org/">ICRA (Associate Editor)</a>, <a href=""> SECON</a>, <a href=""> ICCCN</a>, Co-chair <a href="https://rss2017-rcw.mit.edu/"> RSS workshop on ”Multi-Robot Communication In The Wild” </a> </li>
+             <li> <b> 2016</b>: <a href="http://sensys.acm.org/2016/people/">Sensys </a>, <a href="http://ipsn.acm.org/2016/organization.html?v=1">IPSN </a>, <a href="http://dars2016.org/organizing-committee/"> DARS</a>, <a href="https://www.icra2016.org/">ICRA (Associate Editor) </a></li>
+             <li> <b> 2015</b>: <a href="http://ipsn.acm.org/2015/organization.html?v=1">IPSN</a>, ROBIO, Co-Chair <a href="https://cse.buffalo.edu/faculty/kdantu/rsn15/"> Second Workshop on Robotic Sensor Networks </a> </li>
+             <li> <b> 2014</b>: <a href="http://www.aaai.org/Conferences/AAAI/2014/aaai14committee.php">AAAI</a>, <a href="http://www.kros.org/dars2014/06web02.php">DARS</a>, <a href=http://www.cs.ox.ac.uk/ewsn14/#!/website/organisation">EWSN</a>, Co-Chair <a href="https://cse.buffalo.edu/faculty/kdantu/rsn14/"> First Workshop on Robotic Sensor Networks </a></li>
+            </ul>
+
+            <span class="label label-success">Journal and Magazine Referee</span>
+            <ul>
+                <li>
+                    <b>Journal Referee:</b> <br>
+                    IEEE Transactions on Mobile Computing, Autonomous Robots (frequent)<br>
+                    IEEE Transactions on Robotics,
+                    Journal of Sensors, IEEE Transactions on Parallel and Distributed Systems, IEEE Transactions on Wireless Communications
+IEEE Journal on Selected Areas in Communications, ACM Transactions on Sensor Networks (occasionally)
+                </li>
+            </ul>
+            </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advising Section -->
+<section id="advising">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+           <i class="noshow" style="display:none;" id="tab-7">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-7-content').toggle();">Advising  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+           <div class="allshow" style="display:none;" id="tab-7-content">
+
+            <hr class="star-primary">
+            <h2>Advising</h2> <!-- <a href="cv.html#SECTION000110000000000000000" class="btn btn-primary">More &raquo;</a></h2>-->
+            <ul>
+                <li>
+                    <span class="label label-success">Ph.D.</span> <a target="_blank" href="https://cse.buffalo.edu/~sc296/">Sharath Chandrashekhara</a> (completed Fall 2018, Joint with <a href="https://nsr.cse.buffalo.edu/?page_id=272">Steve Ko</a>), currently at Samsung Research.  </span>
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://www.linkedin.com/in/zakieh/"> Zakieh Hashemifar</a> (Final year).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://www.acsu.buffalo.edu/~farshadg/"> Farshad Ghanei</a> (Fifth year).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href=""> Ali Ben Ali</a> (Fourth year).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://cse.buffalo.edu/~charuvah/"> Charuvahan Adhivarahan</a> (Third year).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://scholar.google.com/citations?user=4sS54bAAAAAJ&hl=en"> Yuyang Chen</a> (Third year).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://dblp.org/pers/c/Czerniejewski:Adam"> Adam Czerniejewski</a> (Second year, joint with <a href="https://cse.buffalo.edu/~lziarek/">Lukasz Ziarek</a>).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://www.linkedin.com/in/changmpark/"> Chang Min Park</a> (Second year, joint with <a href="https://nsr.cse.buffalo.edu/?page_id=272">Steve Ko</a>).
+                </li>
+                <li>
+                    <span class="label label-info">Ph.D.</span> <a href="https://sofiya.io/"> Sofiya Semenova </a> (First year).
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Home Section -->
+<section id="grants">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Grants  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Grants</h2>
+            <ul>
+              <li> <span class="label label-success">NSF CAREER</span> NSF CNS#1846320: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1846320&HistoricalAwards=false">CAREER: Enabling Seamless Vision Sensing in Cloud-Edge Systems</a>
+                <ul>
+                  <li> Total: 550k </li>
+                  <li> Role: PI </li>
+                  <li> 2019-2024. </li>
+                </ul>
+              <li> <span class="label label-success">CRI-Medium</span> NSF CNS#1823230: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1823230&HistoricalAwards=false">CRI: CI-New: Collaborative Research: Extensible, Software Enabled Unmanned Aerial Vehicles</a>
+                <ul>
+                  <li> Total: 920k, UB Share: 560k </li>
+                  <li> Role: Co-PI, PI - <a href="https://cse.buffalo.edu/~lziarek/">Lukasz Ziarek</a> </li>
+                  <li> 2018-2021. </li>
+                </ul>
+                <li> <span class="label label-success">UB-Internal</span> UB Robotics Day
+                  <ul>
+                    <li> Total: 30k </li>
+                    <li> Role: PI </li>
+                    <li> Funding to organize a community outreach event on robotics </li>
+                    <li> 2018-2020 </li>
+                  </ul>
+                <li> <span class="label label-success">CSR-Small</span> NSF CNS#1618531: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1618531&HistoricalAwards=false">CSR: Small: Project T: Enabling Open Innovation in Mobile Platforms through API Virtualization</a>
+                  <ul>
+                    <li> Total: 500k </li>
+                    <li> Role: Co-PI, PI - <a href="https://nsr.cse.buffalo.edu/?page_id=272">Steve Ko</a> </li>
+                    <li> 2016-2019. </li>
+                  </ul>
+                  <li> <span class="label label-success">RI-Medium</span> NSF IIS#1514395: <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1514395&HistoricalAwards=false">RI: Medium: Collaborative Research: Novel microLIDAR Design and Sensing Algorithms for Flapping-Wing Micro-Aerial Vehicles</a>
+                    <ul>
+                      <li> Total: 1.1m, UB Share:330k </li>
+                      <li> Role: Lead PI </li>
+                      <li> 2015-2019. </li>
+                    </ul>
+                    <li> <span class="label label-success">UB Internal</span> Community of Excellence on <a href="https://www.buffalo.edu/smart.html">Sustainable Manufacturing and Advanced Robotics Technologies (SMART)</a>
+                      <ul>
+                        <li> Total: 4.7m over five years </li>
+                        <li> Role: Core-member, Director - <a href="http://engineering.buffalo.edu/mechanical-aerospace/people/faculty/k-lewis.html">Kemper Lewis</a> </li>
+                        <li> 2015-2020. </li>
+                      </ul>
+
+
+            </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Home Section -->
+<!-- <section id="links">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-8">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-8-content').toggle();">Grants  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+
+            <div class="allshow" style="display:none;" id="tab-8-content">
+
+            <hr class="star-primary">
+            <h2>Random Links</h2>
+            <ul>
+                <li><span class="label label-success"><a target="_blank" href="http://www.cs.ucy.ac.cy/colloquium/"><font color="white">Colloquium</font></a></span> I am the Computer Science Colloquium Coordinator.</li>
+                <li><span class="label label-default"><a target="_blank" href="http://www.homepages.ucl.ac.uk/~uccazei/"><font color="white">Brother</font></a></span> My brother's website at UCL, UK.</li>
+                <li><span class="label label-info"><a target="_blank" href="https://smartlib.cs.ucy.ac.cy/scripts/exportBooks.php?mykey=0a05bb77edad7395da818f361f8115a2"><font color="white">Books</font></a></span> My book collection constructed using our <a target="_blank" href="http://smartlib.cs.ucy.ac.cy/">SmartLib project.</a></li>
+                <li><span class="label label-danger"><a target="_blank" href="https://code.org/learn"><font color="white">Hour-of-Code</font></a></span> I support the hour of code iniative as a volunteer instructor.</a></li>
+                <li><span class="label label-primary"><a target="_blank" href="https://github.com/dmsl"><font color="white">Github</font></a></span> I support open-source code development.</a></li>
+                <li><span class="label label-warning"><a target="_blank" href="http://www.kyreniaship.org/"><font color="white">Kyrenia-Chrysocava</font></a></span> A project aimed to preserve the cultural heritage of the <a target="_blank" href="https://en.wikipedia.org/wiki/Kyrenia_ship">Kyrenia ship</a>.</li>
+                <li><span class="label label-success"><font color="white">Cycling</font></span> My favorite hobby besides programming :-)</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- Home Section -->
+<!-- <section id="contact">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+
+            <i class="noshow" style="display:none;" id="tab-9">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-9-content').toggle();">Contact  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            </i>
+            <div class="allshow" style="display:none;" id="tab-9-content">
+
+            <hr class="star-primary">
+            <h2>Contact</h2>
+            <div class="container lead">
+                <div align="left" class="col-md-3">
+                    <h4 class="myEN">
+                        POSTAL ADDRESS
+                    </h4>
+                    <p class="myEN">
+                        Karthik Dantu<br>
+                        Dept. of Computer Science and Engineering<br>
+                        University at Buffalo<br>
+                        338 Davis Hall<br>
+                        Buffalo, NY 14260-2500<br>
+                    </p>
+                    Email:
+                    <script language="JavaScript">
+                        <!--
+                        document.write("&nbsp;");
+                        spiderjam('kdantu','buffalo.edu');
+                        -->
+                    </script><br>
+                </div>
+
+                <!-- <div align="left" class="col-md-3">
+                    <h4>OFFICE ADDRESS</h4>
+                    <p>B106, Computer Science,<br/>
+                        Building FST-01,<br/>
+                        1 University Avenue,<br/>
+                        2109 Aglantzia, CYPRUS<br/>
+                        Tel: <a href="tel:0035722892755">+357-22892755</a><br/>
+                        Fax: <a href="tel:0035722892701">+357-22892701</a><br/>
+                        <br/>
+                    </p>
+                </div>
+
+                <div align="left" class="col-md-3">
+                    <h4>OFFICE DIRECTIONS</h4>
+                    <p><a href="http://goo.gl/lJjRX8" target="_blank"><img src="images/anyplace-directions.jpg" border="0"
+                        width="150"> <br>http://goo.gl/lJjRX8</a>
+                    </p>
+                </div>
+        </div>
+        <hr class="star-primary">
+        </div>
+
+</section> --> -->
+
+<hr class="star-primary">
+<footer>
+    <small>
+    <center>
+        © 2015 | D. Zeinalipour. Credits: AR template
+    <a onclick="javascript:$('#credit').toggle();"><img border="0" src="images/ccby.png"/></a>
+    <div style="display:none;" id="credit">[AR template available under Creative Commons CC BY 4.0 licence:
+    <a href="https://github.com/dmsl/academic-responsive-template"_blank">
+        https://github.com/dmsl/academic-responsive-template
+    </a> ]
+    </div>
+    </center>
+    </small>
+</footer>
+
+</body>
+
+</html>
