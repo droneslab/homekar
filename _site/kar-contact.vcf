@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.10//EN
+N:Dantu;Karthik;;;
+FN:Karthik Dantu
+ORG:Dept. of Computer Science and Engineering\, University at Buffalo;
+TEL;type=WORK;type=VOICE;type=pref:0017166452670
+TEL;type=WORK;type=FAX:0017166453484
+ADR;type=WORK;type=pref:;;338 Davis Hall;;14222;Buffalo NY
+NOTE:POSTAL ADDRESS\n\nKarthik Dantu\nDept. of Computer Science and Engineering\nUniversity at Buffalo\n338 Davis Hall\n, Buffalo NY\n\nTel: +1-7166452670\nFax: +1-7166453484\nEmail:  kdantu@buffalo.edu
+item1.URL;type=pref:http://cse.buffalo.edu/faculty/kdantu
+item1.X-ABLabel:_$!<HomePage>!$_
+UID:66c29b03-f1ce-4aa8-ac75-42350aeaa2af
+X-ABUID:66C29B03-F1CE-4AA8-AC75-42350AEAA2AF:ABPerson
+END:VCARD
